@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Inter:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#2a2a2d", "outline": "#99907c", "on-tertiary": "#3c2f00", "on-primary-fixed": "#241a00", "surface": "#131316", "inverse-primary": "#735c00", "on-primary-container": "#554300", "surface-variant": "#353438", "primary-fixed-dim": "#e9c349", "tertiary-fixed": "#ffe088", "on-primary-fixed-variant": "#574500", "surface-container": "#1f1f22", "inverse-on-surface": "#303033", "primary-fixed": "#ffe088", "on-background": "#e5e1e6", "surface-container-highest": "#353438", "secondary": "#e7c355", "secondary-container": "#8e7100", "primary": "#f2ca50", "on-surface-variant": "#d0c5af", "on-secondary-container": "#fffbff", "tertiary-container": "#ceb058", "on-secondary-fixed-variant": "#574500", "on-secondary-fixed": "#241a00", "on-tertiary-fixed": "#241a00", "error": "#ffb4ab", "on-tertiary-container": "#554300", "on-error-container": "#ffdad6", "on-primary": "#3c2f00", "on-error": "#690005", "background": "#131316", "on-surface": "#e5e1e6", "surface-container-lowest": "#0e0e11", "surface-bright": "#39393c", "on-tertiary-fixed-variant": "#574500", "surface-container-low": "#1b1b1e", "inverse-surface": "#e5e1e6", "primary-container": "#d4af37", "error-container": "#93000a", "tertiary-fixed-dim": "#e3c46a", "on-secondary": "#3d2f00", "secondary-fixed-dim": "#e7c355", "surface-dim": "#131316", "surface-tint": "#e9c349", "tertiary": "#ebcc71", "outline-variant": "#4d4635", "secondary-fixed": "#ffe089" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter": "1rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2.25rem", "space-sm": "0.5rem" }, fontFamily: { "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_16px_rgba(0,0,0,0.6)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Aura Video Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WBcJEc5bjBlPt2HMyTaWDirFhKNVTgAxEbue5soItln-68gzRe0WaY_2qNFb90w9Gw1QOypci603r-r65xLdy6dmXb8NSXPSoHh-JA0FIGJOsieBE7D5Z4xy5KjyTJwKtuOEN45g_TClSAYA8AKTCXnXEIrftSHGWu8vaFZrZdl-16uGAx9neTdkxNrjtqiEWD-XoPs2I9Y80gpuMJUs7cyAaizn01t4SlzjLWAe43HmC85I4Rhu5LUQ"/><span class="font-headline-md text-headline-md tracking-wider font-bold text-primary drop-shadow-[0_0_12px_rgba(242,202,80,0.35)]">AURA</span><span class="hidden font-headline-md text-headline-md font-semibold text-on-surface">Subscriptions Hub</span></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(242,202,80,0.8)]"></span></button><button aria-label="Creator Profile" class="w-11 h-11 flex items-center justify-center ml-space-xs" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover p-[1px] bg-gradient-to-tr from-primary to-primary-container shadow-[0_0_10px_rgba(212,175,55,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvqKilfJFi0-wL2DHiRu-epTk-5t3eWCK8tom-c_XtL-rnoIFWN_h2fPcxPStEG5I-rXFXjbRiwZhc9I0WO-CTnxz43_gRimYPhlrggys2WAjweOtam2OJxvmOJbjIKLXFXtuKCK9QCn3h_7Sb5_027tqpdAaQBfENLYBBSnQOMN3a2aOY1Du4ld75yN9ZcnaDEsTeZU41JMlmCvYBQlyhs9G2WPqUldYIoR0fd-S7do1cSuS8zUFT"/></button></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24"><div class="flex flex-col w-full pb-6 space-y-space-lg">
+<!-- Subscriptions Creator Circle Row -->
+<section class="flex flex-col space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between px-margin-mobile">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight">Channels</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<button class="flex items-center gap-1 text-primary hover:text-primary-fixed transition-colors" type="button">
+<span class="font-label-md text-label-md">Manage</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Horizontal Creator Avatars -->
+<div class="flex items-start gap-space-md overflow-x-auto px-margin-mobile scrollbar-none py-1">
+<!-- Creator: Studio Kroma (LIVE) -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="relative">
+<div class="w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-error to-primary shadow-[0_0_12px_rgba(242,202,80,0.3)]">
+<img class="w-full h-full rounded-full object-cover" data-alt="Close up cinematic portrait of Studio Kroma creator, modern digital artist with soft ambient gold and magenta studio rim lighting, dark moody background, high fashion aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ4L7SMVS1XHr-ZEF7rrNIsy2YY7le1tr7Nm832o03pY-EQ0XaG8sYSJ-FxRVTMjSs5BGuyxfw0QbD9JRHMe6yt83ivjeOdx2N_aIjYExExLg9X4DCoLCrtzOgb484OgFzhsZDNGCjRL4tFg1gl3GrCo2xSnfzpgV0PsdLUNEKHq42Q3fx1JsfRIrAbW5YlF54rl65hh28cJxLBwRPSq4ZJ6gZIROvToTWcsp_P0a33zYwVe857BEU"/>
+</div>
+<span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-error text-on-error font-label-sm text-[9px] uppercase tracking-wider font-bold shadow-sm flex items-center gap-0.5">
+<span class="w-1 h-1 rounded-full bg-on-error animate-ping"></span>
+            LIVE
+          </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface truncate w-14 text-center mt-1 group-hover:text-primary transition-colors">Kroma</span>
+</button>
+<!-- Creator: Horology Noir (New Video Ring) -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="relative">
+<div class="w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-primary via-primary-container to-secondary shadow-[0_0_10px_rgba(212,175,55,0.25)]">
+<img class="w-full h-full rounded-full object-cover" data-alt="Refined artisan watchmaker in dark moody workshop illuminated by warm brass desk lamp, cinematic editorial luxury tone, macro depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD09maEappxdACn1NVnbiV7RNXumMRaGXC3Adll07S5XEMbbue0T8UIfAF0Gse3LMU12yF-AHlpIvxsKs6u8DQgI1bzKGfb8CXthWVzhvh4KQqJCNgbCOU2I0B9GlBSHdUcHyBgt4jTTidRmAnw-Enl4LLBhrYcq4zKMZE0dnz1VJmr92sXYvXaXOrr-1i_0p1POBih3HuMJYDAScLJGKn-RnSzmd6UHpV1HeyPtFvdr9HU-83h7fJW"/>
+</div>
+<span class="absolute top-0 right-0 w-3 h-3 rounded-full bg-primary border-2 border-surface flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface truncate w-14 text-center group-hover:text-primary transition-colors">Horology</span>
+</button>
+<!-- Creator: Apex Dynamics -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="relative">
+<div class="w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-primary to-outline-variant">
+<img class="w-full h-full rounded-full object-cover" data-alt="Minimalist architectural photographer portrait against matte black concrete brutalist structure with warm sunrise golden highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCGFXF87FtxXN1ur0dhFJQBHE9DZhJXwkd-d3a84H58uaX1wmeg3dl4W3w6VcgqxGGCbmhXbLfoMCrN2pgapgnlAgP3c5bTYAGp3oGMM2p_cEZ4WYtI6YsJ8d7IELn7aKjWkvdPne4wWpU1CvfJH0Ywplxcy9InWuGIwYn77yTNT_5Us-N793V58n2LWaP1LW_7OI7EQxjPzC1aaVpcNodwYpxWUJuDxpAV6-5raiCiRFtOO_KUmmM"/>
+</div>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-14 text-center group-hover:text-primary transition-colors">Apex</span>
+</button>
+<!-- Creator: CyberPulse -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-primary/80 to-surface-variant">
+<img class="w-full h-full rounded-full object-cover" data-alt="Futuristic technologist portrait with subtle warm amber holographic reflections across sleek eyewear in an obsidian dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAswjyPdAQhozBBc2UtiueqXnY9jABgjeoaxegz2MC6gs84fNPtBDfmfrQdA22SSYzTi3QgtkR0RzNUCe7FmcCpyQTIopMCHFAw8hoZz1XyO9LYqp2zWdndpN8SOc1ogQvWVzYWpu26AUpgzSWRC2_is32zPCoEyc7-6Yvrk59vtAnaAEp0B45AshaWUUSyaP0iuX-imEghUoa9LKafyxF1Dihg00KN_Lm8mLAbsEORAPAFSS_oCVMH"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-14 text-center group-hover:text-primary transition-colors">CyberPulse</span>
+</button>
+<!-- Creator: Nocturne -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="w-14 h-14 rounded-full p-[2px] bg-surface-container-high">
+<img class="w-full h-full rounded-full object-cover" data-alt="Film director silhouette with vintage 35mm camera, backlit by deep golden studio glow, editorial dark magazine aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI25oCmUTZwW11G640XvyAuDx4nt1MKUazO5RAtNrXZYLbyIzJpvr3llQdewO8XWbEfdh6LH5jO33U5hviyaWYfYY9XV3mgEfT7qmu_PSQwPvk8853J3A1VdPRoXjRhUefTdBN7CS52QSRyL_14hQNwZBMYr-z5Dn6JIoljHvZDiepcCdHwzVuozR_yXoJsO1oMsFYA4Bki0Y7vHsyu8spTKMp73qMLPIqo1lIrsROsDgPOXKnzY4u"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-14 text-center group-hover:text-primary transition-colors">Nocturne</span>
+</button>
+<!-- Creator: Elena Cine -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="w-14 h-14 rounded-full p-[2px] bg-surface-container-high">
+<img class="w-full h-full rounded-full object-cover" data-alt="Cinematographer woman with subtle bronze metallic makeup in high contrast dramatic dark studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoCFjIEHiGkucWL_qNNcSBapXmLdDDmEjrD9vAVXc6eiJXhkBQPP63RWg2_umwGlHsZfP2wTd0zaWymHjeD-usnzQJEqUn6-7S5dSUTLVpE3vFLbVIQsBX1ikvWIB8rFrRD4-r4lnrKXKZKisfjl2VMNf_SKUG9pW2oHEPR6T4_DSWGnj8fUoFacfSe8HwJDPRsAFQyez0WDNu8_vgd6sPCIM3sokRZ2Khw7EKlJe2H1dCqd3GtDIU"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-14 text-center group-hover:text-primary transition-colors">Elena</span>
+</button>
+<!-- Creator: Midas Tech -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="w-14 h-14 rounded-full p-[2px] bg-surface-container-high">
+<img class="w-full h-full rounded-full object-cover" data-alt="Hardware engineer examining glowing microchip under golden magnifying ring light in luxury dark lab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAecP-clZA0zsgiLDTH03q2pqsJojWEX99hgRm_Yj_4F4vjrCLR_4rFq0Du_0VYcjZCWdT1iwxaGlx6zZtn8fZyNCsMLDu-c53MDP5NXz-Vli7auRXaSQMhZtj0w6wGta1MQSM0HpsxEgfIcdGEymdNSxBXlwJkrbdOZD6iVO4xx-i7KHWbJGXSOFVZj19O2gh28Pp-D08b6xoYw1tjxkGmF8jINCMG5gLrsbqxaHP7snv3cWIAzVC1"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-14 text-center group-hover:text-primary transition-colors">Midas</span>
+</button>
+<!-- View All Circle -->
+<button class="flex flex-col items-center space-y-1.5 flex-shrink-0 group" type="button">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary">All (34)</span>
+</button>
+</div>
+</section>
+<!-- Filter Toggle Pills -->
+<section class="px-margin-mobile">
+<div class="flex items-center gap-2 overflow-x-auto scrollbar-none py-0.5" id="filter-pills">
+<button class="filter-btn px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-[0_0_12px_rgba(242,202,80,0.35)] flex items-center gap-1 transition-all" data-filter="all" type="button">
+<span>All</span>
+</button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-variant transition-all" data-filter="today" type="button">
+<span>Today</span>
+</button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-variant flex items-center gap-1 transition-all" data-filter="live" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Live</span>
+</button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-variant transition-all" data-filter="podcasts" type="button">
+<span>Podcasts</span>
+</button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-variant transition-all" data-filter="unwatched" type="button">
+<span>Unwatched</span>
+</button>
+</div>
+</section>
+<!-- Library Quick-Vault Carousel Shelf -->
+<section class="flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between px-margin-mobile">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">local_library</span>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface">Vault &amp; Offline</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Cloud Sync ON</span>
+</div>
+<!-- Shelf Grid / Horizontal Scroller -->
+<div class="flex items-stretch gap-space-sm overflow-x-auto px-margin-mobile scrollbar-none py-1">
+<!-- Downloads Card -->
+<div class="flex-shrink-0 w-36 p-3 rounded-xl bg-surface-container flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container-high transition-colors">
+<div class="absolute -right-3 -top-3 w-16 h-16 rounded-full bg-primary/5 pointer-events-none blur-lg"></div>
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">download_done</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">1080p</span>
+</div>
+<div class="mt-4">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Downloads</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">12 offline ready</p>
+</div>
+</div>
+<!-- History Card with Mini Radial Progress -->
+<div class="flex-shrink-0 w-36 p-3 rounded-xl bg-surface-container flex flex-col justify-between shadow-sm group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">42 view</span>
+</div>
+<div class="mt-4">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">History</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Resume 2 active</p>
+</div>
+</div>
+<!-- Playlists Card -->
+<div class="flex-shrink-0 w-44 p-3 rounded-xl bg-surface-container flex flex-col justify-between shadow-sm group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">playlist_play</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">6 Lists</span>
+</div>
+<div class="mt-3">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Playlists</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Filmmaking, Noir OST</p>
+</div>
+</div>
+<!-- Watch Later Card -->
+<div class="flex-shrink-0 w-36 p-3 rounded-xl bg-surface-container flex flex-col justify-between shadow-sm group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">watch_later</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="mt-4">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Watch Later</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">8 queued items</p>
+</div>
+</div>
+<!-- Liked Videos -->
+<div class="flex-shrink-0 w-36 p-3 rounded-xl bg-surface-container flex flex-col justify-between shadow-sm group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.2k</span>
+</div>
+<div class="mt-4">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Favorites</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Curated gems</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Feed Section: Subscribed Feed -->
+<section class="flex flex-col space-y-space-md px-margin-mobile">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface flex items-center gap-2">
+<span>Recent Premieres</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">New</span>
+</h3>
+<button class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Video Card 1: Horology Noir (Swipeable actions preview) -->
+<article class="flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-md group">
+<!-- Media Layer with 16:9 ratio -->
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro cinematic shot of ultra-luxury tourbillon watch movement in polished titanium and yellow gold gears, obsidian black background with soft amber bokeh light, hyper-detailed mechanical horology craftsmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK9imG6zup5AKLuXJ4Vn8lBTuHfwjmJkKvJPM8T_i_e29y7t-kUzS6NlO4BD04M7HdwsfvT31374ubBjFgMKRWi2U1DelAdgOm2yhF0sPtmJQEKLYkEbvC4aMbIHZ4ZkozzVvGDq3ClOKoJLncX59IYt9FsTxXvcOKt-ZPfboRnYTJ-wHGbi_l_mEZ50sryrDqJaflAokzlYeQwLz4jkLLJuZciOevcW70e7QVCQaFmnfj46U-4tlD"/>
+<!-- Duration Badge -->
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/85 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>24:18</span>
+</div>
+<!-- 4K HDR Badge -->
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/75 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase">
+          4K HDR
+        </div>
+<!-- Quick Action Floating Bar Overlay on Tap / Hover -->
+<div class="absolute top-2.5 right-2.5 flex items-center gap-1.5">
+<button aria-label="Watch Later" class="w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-md text-on-surface hover:text-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+<button aria-label="Add to Queue" class="w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-md text-on-surface hover:text-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+</div>
+</div>
+<!-- Video Metadata Cluster -->
+<div class="p-space-md flex flex-col space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover p-[1px] bg-gradient-to-tr from-primary to-primary-container" data-alt="Master watchmaker portrait in dramatic chiaroscuro lighting, luxury black atelier context" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdu2fnUdnIVTjvxaA526SIe-dPUctyshn0AWd345BjrUXboQcsWU9ytfrmcH5uIv4NzNeBVLkGe-beS4dOXcYVo9Hswve6kePkWNlmTaxC49IfDSWN-6REOIuIe3HuukJrwXNOhLVQEQQ0MPWrXjjJ2RzImubvhBzrToIHj-5ddlIt2MnK8WvhyCNldVy5LIaontqvFs7vqBiSR5XLetzSW_eLGWBz6uCm7X_pnaqyLu4jTrev0C3W"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[9px] font-bold">✓</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-md text-headline-md font-semibold text-on-surface leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+              Inside the World of Custom Mechanical Watches
+            </h4>
+<div class="flex items-center flex-wrap gap-x-2 gap-y-0.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface flex items-center gap-1">
+                Horology Noir
+                <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+</span>
+<span>•</span>
+<span>140K views</span>
+<span>•</span>
+<span class="text-primary font-medium">2 hours ago</span>
+</div>
+</div>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Quick Interaction Bar -->
+<div class="pt-1 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1.5 hover:text-primary transition-colors like-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span>8.4K</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>312</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share</span>
+</button>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">save_alt</span>
+<span>Save</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Video Card 2: CyberPulse -->
+<article class="flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-md group">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic cybernetic interface visualizing generative AI neural video synth, glowing amber neural connections flowing through a sleek dark matte obsidian canvas, cinematic sci-fi high fidelity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDtLthauDL8-UWvb8YtJDuC-t5p8hG-Py61xr7741FeZYAc2g6Tm0ATl35m7rGcXy2XqLxu_6uj3DHOw6K3KJCIPXv7U4kYMl0kZgM3UT2FmkGFx7a7g8LU0SWlcJfFgqhjrjXX6ArCNDE1dDie0ZIMWtP5eyykHU-fMGjB2LZC6YmB3-NCRc9qG7OfHJDM9izvkAMQ_ZlK5walSZ7ufxYo8Xiak9wcqZ9ygB-DR1LoV6IC-vcAGX1"/>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/85 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-1 shadow-sm">
+<span>18:42</span>
+</div>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-primary/20 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold tracking-wider">
+          EXCLUSIVE
+        </div>
+<div class="absolute top-2.5 right-2.5 flex items-center gap-1.5">
+<button aria-label="Watch Later" class="w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-md text-on-surface hover:text-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+<button aria-label="Add to Queue" class="w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-md text-on-surface hover:text-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover p-[1px] bg-gradient-to-tr from-secondary to-surface-variant" data-alt="Futuristic technologist portrait with golden ambient light in obsidian studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtXmRGJRkT89sxs0F1PYyISdZ0eKYZs8n9LzrFz-BEFiblj6KreBUnNR2qHzuAZw98D6iNUoSNYjcwTm-_woCi9466iWDx9xwXzbLSy7zBPtQSaR-xAGiILso98BZjeLVA-66a3cM8s5u-6izLx1iJA6TqK1pj-9EsGGQWbuasc8DYzMCZjd7IhzNj1EMsqacSYnkwZp2y_y1VJ8aYI0mpHzMDa6Cr4wPopK778ZmnTMbE2wOUgTxn"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[9px] font-bold">✓</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-md text-headline-md font-semibold text-on-surface leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+              Future of Generative Video 2025 Deep Dive
+            </h4>
+<div class="flex items-center flex-wrap gap-x-2 gap-y-0.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface flex items-center gap-1">
+                CyberPulse
+                <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+<span>•</span>
+<span>95K views</span>
+<span>•</span>
+<span>4 hours ago</span>
+</div>
+</div>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<div class="pt-1 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1.5 hover:text-primary transition-colors like-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span>5.1K</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>184</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share</span>
+</button>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">save_alt</span>
+<span>Save</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Interactive script for filter switches and like micro-animations -->
+<script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.className = 'filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-variant transition-all';
+        });
+        btn.className = 'filter-btn px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-[0_0_12px_rgba(242,202,80,0.35)] flex items-center gap-1 transition-all';
+      });
+    });
+
+    document.querySelectorAll('.like-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const icon = this.querySelector('.material-symbols-outlined');
+        const isLiked = icon.style.fontVariationSettings?.includes("'FILL' 1");
+        if (isLiked) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          this.classList.remove('text-primary');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          this.classList.add('text-primary');
+        }
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none" data-active-classes="text-primary font-semibold drop-shadow-[0_0_8px_rgba(242,202,80,0.4)]"><div class="px-margin-mobile pb-space-sm"><div class="pointer-events-auto h-16 rounded-full bg-surface-container-low/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.7),0_0_20px_rgba(212,175,55,0.08)] flex items-center justify-around px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="shorts-pulse" href="#"><span class="material-symbols-outlined text-[22px]">bolt</span><span class="font-label-sm text-label-sm mt-0.5">Pulse</span></a><div class="flex items-center justify-center w-12 h-12"><a class="w-11 h-11 rounded-full bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-on-primary shadow-[0_0_16px_rgba(242,202,80,0.45)] hover:scale-105 active:scale-95 transition-transform" data-path="upload-studio" href="#"><span class="material-symbols-outlined text-[26px] font-bold">add</span></a></div><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-primary font-semibold drop-shadow-[0_0_8px_rgba(242,202,80,0.4)]" data-path="subscriptions-hub" href="#"><span class="material-symbols-outlined text-[22px]">subscriptions</span><span class="font-label-sm text-label-sm mt-0.5">Subs</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="library-vault" href="#"><span class="material-symbols-outlined text-[22px]">video_library</span><span class="font-label-sm text-label-sm mt-0.5">Library</span></a></div></div></nav></body></html>

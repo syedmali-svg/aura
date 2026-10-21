@@ -1,0 +1,6 @@
+{
+  "name": "AURA - Curated Cinema & Video Atelier",
+  "description": "An ultra-luxury, cinematic video streaming platform and creator hub featuring 4K UHD masterworks, vertical Pulse shorts, and curator subscriptions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

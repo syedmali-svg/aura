@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Inter:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#2a2a2d", "outline": "#99907c", "on-tertiary": "#3c2f00", "on-primary-fixed": "#241a00", "surface": "#131316", "inverse-primary": "#735c00", "on-primary-container": "#554300", "surface-variant": "#353438", "primary-fixed-dim": "#e9c349", "tertiary-fixed": "#ffe088", "on-primary-fixed-variant": "#574500", "surface-container": "#1f1f22", "inverse-on-surface": "#303033", "primary-fixed": "#ffe088", "on-background": "#e5e1e6", "surface-container-highest": "#353438", "secondary": "#e7c355", "secondary-container": "#8e7100", "primary": "#f2ca50", "on-surface-variant": "#d0c5af", "on-secondary-container": "#fffbff", "tertiary-container": "#ceb058", "on-secondary-fixed-variant": "#574500", "on-secondary-fixed": "#241a00", "on-tertiary-fixed": "#241a00", "error": "#ffb4ab", "on-tertiary-container": "#554300", "on-error-container": "#ffdad6", "on-primary": "#3c2f00", "on-error": "#690005", "background": "#131316", "on-surface": "#e5e1e6", "surface-container-lowest": "#0e0e11", "surface-bright": "#39393c", "on-tertiary-fixed-variant": "#574500", "surface-container-low": "#1b1b1e", "inverse-surface": "#e5e1e6", "primary-container": "#d4af37", "error-container": "#93000a", "tertiary-fixed-dim": "#e3c46a", "on-secondary": "#3d2f00", "secondary-fixed-dim": "#e7c355", "surface-dim": "#131316", "surface-tint": "#e9c349", "tertiary": "#ebcc71", "outline-variant": "#4d4635", "secondary-fixed": "#ffe089" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter": "1rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2.25rem", "space-sm": "0.5rem" }, fontFamily: { "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_16px_rgba(0,0,0,0.6)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Aura Video Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WBcJEc5bjBlPt2HMyTaWDirFhKNVTgAxEbue5soItln-68gzRe0WaY_2qNFb90w9Gw1QOypci603r-r65xLdy6dmXb8NSXPSoHh-JA0FIGJOsieBE7D5Z4xy5KjyTJwKtuOEN45g_TClSAYA8AKTCXnXEIrftSHGWu8vaFZrZdl-16uGAx9neTdkxNrjtqiEWD-XoPs2I9Y80gpuMJUs7cyAaizn01t4SlzjLWAe43HmC85I4Rhu5LUQ"/><span class="font-headline-md text-headline-md tracking-wider font-bold text-primary drop-shadow-[0_0_12px_rgba(242,202,80,0.35)]">AURA</span><span class="hidden font-headline-md text-headline-md font-semibold text-on-surface">Home Feed</span></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(242,202,80,0.8)]"></span></button><button aria-label="Creator Profile" class="w-11 h-11 flex items-center justify-center ml-space-xs" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover p-[1px] bg-gradient-to-tr from-primary to-primary-container shadow-[0_0_10px_rgba(212,175,55,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvqKilfJFi0-wL2DHiRu-epTk-5t3eWCK8tom-c_XtL-rnoIFWN_h2fPcxPStEG5I-rXFXjbRiwZhc9I0WO-CTnxz43_gRimYPhlrggys2WAjweOtam2OJxvmOJbjIKLXFXtuKCK9QCn3h_7Sb5_027tqpdAaQBfENLYBBSnQOMN3a2aOY1Du4ld75yN9ZcnaDEsTeZU41JMlmCvYBQlyhs9G2WPqUldYIoR0fd-S7do1cSuS8zUFT"/></button></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Category Pills Row -->
+<section class="w-full pt-space-xs pb-space-sm px-margin-mobile">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar scroll-smooth">
+<button class="category-chip px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shrink-0 shadow-[0_0_12px_rgba(242,202,80,0.35)] active:scale-95 transition-all" type="button">
+        All
+      </button>
+<button class="category-chip px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all hover:text-on-surface" type="button">
+        Cinematography
+      </button>
+<button class="category-chip px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all hover:text-on-surface" type="button">
+        Music &amp; Score
+      </button>
+<button class="category-chip px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all hover:text-on-surface" type="button">
+        Tech &amp; AI
+      </button>
+<button class="category-chip px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all hover:text-on-surface" type="button">
+        Podcasts
+      </button>
+<button class="category-chip px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all hover:text-on-surface" type="button">
+        Luxury Living
+      </button>
+<button class="category-chip px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all hover:text-on-surface" type="button">
+        Visual Arts
+      </button>
+</div>
+</section>
+<!-- Featured Spotlight Video Card -->
+<section class="w-full px-margin-mobile mb-space-lg">
+<div class="group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.6)]">
+<!-- Media Aspect Layer -->
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-highest cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic frame from a futuristic film studio showing high-end anamorphic camera rigs filming a hyper-realistic holographic sphere glowing in warm amber and gold light in a dark void stage with moody atmospheric haze." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh0GFYKSnCoi-mhKS72XECakKO7v7R0sfdgTP5_IrlcqxsO9OKxJYxrj10f5rgNeZc4x5uB7K5d1o9d7sSv5oWUiDM39u3GkPEK9moukG9rG9sm5WM43763Nipl97A5SET6hq3t8en87DDMZhu4h_JYxu8mAmovuhPrePxQOYnGNZqSVO-mZeAUlXswF3_z1hE7QTFlDKDzAd5UrRkG2aRbstoHu87FvLoZrF21twJ79kIubR-_I7f"/>
+<!-- Ambient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-black/30"></div>
+<!-- Badges Cluster Top -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-black/70 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Featured
+          </div>
+<div class="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-on-surface font-label-sm text-label-sm tracking-wide">
+            4K UHD
+          </div>
+</div>
+<!-- Duration Pill -->
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+          18:42
+        </div>
+<!-- Center Play Ambient Button On Hover/Tap -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary/90 flex items-center justify-center text-on-primary shadow-[0_0_20px_rgba(242,202,80,0.6)]">
+<span class="material-symbols-outlined text-[28px] translate-x-0.5">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Info Cluster -->
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="relative shrink-0 mt-0.5">
+<img class="w-10 h-10 rounded-full object-cover p-[1px] bg-gradient-to-tr from-primary to-primary-container" data-alt="Portrait avatar of an avant-garde film director in moody low-key studio lighting with warm golden edge highlights and sleek minimal attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpZoLKqJplJygOORanIAjuLSARdTGzWFytdTTer6MWg5qIZd162RfIVNiFiIOwstFjXq-fCr-QYfbTbQMp-KAhYBGCNIrvj7VdfcbwQAQXcvsc0K-TNQe2JGlMcbOryD-wZ5gZAqEzg5n-G7U1Dc1Vc42hW3wq9rGElPDJtkhrJ40ULEUrQCXp2Ed5bkKCHd1auKe0fHW3R14E98r27GU03yneg7_gWUrhbZtNfwcZI54XgrKcA4V_"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface line-clamp-2 leading-snug">
+                The Next Frontier of Neural Cinematography
+              </h2>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium truncate">Aethelgard Studios</span>
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>1.2M views</span>
+<span>•</span>
+<span>2 days ago</span>
+</div>
+</div>
+</div>
+<button aria-label="More options" class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Quick Interaction Bar -->
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<div class="flex items-center gap-space-xs">
+<button class="btn-like flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span class="font-label-md text-label-md font-semibold">48K</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="font-label-md text-label-md font-semibold">Share</span>
+</button>
+<button class="btn-save flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-variant text-primary font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary transition-all" type="button">
+            Join Studio
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Aura Pulse / Shorts Shelf -->
+<section class="w-full mb-space-lg">
+<div class="flex items-center justify-between px-margin-mobile mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px] drop-shadow-[0_0_8px_rgba(242,202,80,0.5)]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface tracking-tight">Pulse</h3>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold flex items-center gap-0.5 hover:underline" href="#">
+        View All
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Pulse Horizontal Scroll -->
+<div class="flex items-center gap-space-sm overflow-x-auto no-scrollbar px-margin-mobile">
+<!-- Card 1 -->
+<div class="group relative w-36 aspect-[9/16] rounded-xl overflow-hidden shrink-0 bg-surface-container-low shadow-[0_4px_16px_rgba(0,0,0,0.5)] cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro cinematic shot of glowing analog audio synthesizer modular cables pulsing with warm amber LED filaments in a darkened studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACXg5iee3PyQ7jVRui6_wGUIRcEmOvMIMYasxVA2mO4HH7BMDqWe9AXy8EOIxe6ct_lnRElK6qqLPOxmQmaCWBYKYenolkEyiIV_gTvSIguJBoivNR_iRoeVndJe-oWdP9K2OgB9Qiat7R03Z_pEG1LljrOB9YbGF3QD_o6e6bQ2tCAV7Fe47Gtudg68ydLcrmCVI7fqt1U6W5T6w6SmBFpOB3_FEr8GswuU7xI7tLOulcQ6ecXV-j"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          4.8M
+        </div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex flex-col">
+<p class="font-label-md text-label-md font-semibold text-on-surface line-clamp-2 leading-tight">
+            Analog warmth vs Digital crystal
+          </p>
+<div class="flex items-center gap-1.5 mt-2">
+<img class="w-4 h-4 rounded-full object-cover" data-alt="Micro avatar icon of electronic audio engineer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN6zRF3JHKY6jBy_ArqMJG8dJmnU1GwY6Yy1TnFUo61VLS0SDJTihOmmnxY3UD1LclIz25cvBHPAeq_e2YJ4SUBZ0b2IsyfHgH3kStPrTkNc-i2sSyeIsetyukejrIbaAiqcyid7jWdj2WSHEcRv5gHdASIwu9jI4b8nV4LmK_un2GN6kXPN5qTiBkBpniVRb2llGd6rKdPZD1rnHHGdGpRdSMrzEeWwEXIYVIb1pouQIwwzJau6r9"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">@synth_lab</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative w-36 aspect-[9/16] rounded-xl overflow-hidden shrink-0 bg-surface-container-low shadow-[0_4px_16px_rgba(0,0,0,0.5)] cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Sleek aerodynamic concept hypercar body line captured in high contrast golden reflections over obsidian carbon fiber." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Jkg6dxFJ8Nu1tzy-wSm5PcxxyGp53LDssb80d_fP6LUTqR6VfKwry2Dk40fbzP5BGSERFKdW5w8IcP7mdfI4kVE0TK2GmY5L4QKbvzILsZ41YgQ4GvAOdEwPBzxJmitaIv7MtC7CjsUqOaKfmX9QF-jPgbWNQZF6786ZV5u4EKwLPTBP5yMdunwkRuSUWHxMyy31s-WFuauPmoSJJ-Z4EBJ1OAshNXnBaXReDyMvJkt5Iq2nLaak"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          1.2M
+        </div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex flex-col">
+<p class="font-label-md text-label-md font-semibold text-on-surface line-clamp-2 leading-tight">
+            Wind Tunnel 1000fps Acoustic Test
+          </p>
+<div class="flex items-center gap-1.5 mt-2">
+<img class="w-4 h-4 rounded-full object-cover" data-alt="Micro avatar of luxury automotive speed studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyI4Xqoay6KaKUdvfO8UI_gDuuxaj6BNMQw3ModjR7woCwgXvdf5rTGPSHKtEpk_HxThma3Q_PbCrF6y80lX3stxNyr2yDj0xS06D4gkd3V5ZEtX-wBkKCA2r-31A90vdRyBtIH3Ikz6ErHDDfaGr0x4UokHsc4QtmtPLg-bMxJ4VSztx5GmgngnGKlGlj5xMjC0mXapzkAXL-tSmpUKamuvj6Mv0Szb4inkgEedZ_XnK9FWzzxe8o"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">@apex_dyn</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative w-36 aspect-[9/16] rounded-xl overflow-hidden shrink-0 bg-surface-container-low shadow-[0_4px_16px_rgba(0,0,0,0.5)] cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Slow motion gold leaf particles floating through deep obsidian liquid with volumetric amber god-rays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwbtNAdqUvwvjitZsfK1ui7AvrW_XovY8nm6AW_HhMhiH7kJfgRjm26HGG__JMuzJIsJqHecgcOyzyPqoCww-noqA0EsqtTx10WDQazX1vFY9WkKccDoN-fBXmzyOz4-ATvdZL9-0OV6YNJHrAjSZ28_wDMG7X77LqpixL8dgqs1NHVKSoj5TcWc4hzOfYs1Jn16-n9iy-uNGSQrzh6LeNIspFhAiquUt_wPVJHTyS3g-QZzNBGkiw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          950K
+        </div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex flex-col">
+<p class="font-label-md text-label-md font-semibold text-on-surface line-clamp-2 leading-tight">
+            Suspended Fluid Sculptures
+          </p>
+<div class="flex items-center gap-1.5 mt-2">
+<img class="w-4 h-4 rounded-full object-cover" data-alt="Micro avatar of fine art visual artisan." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCecvgQmdLXjhkHYupqM5w1dBR3Bl7GGRTMGoGhTvS-Rd7UsEGa6BczW3ovkfaUZvDARbNheV_EM2DEGlv_7-Mlx3-O-K8w0OsznvLj1bm-xLFJAzEtOiyFvSU6PQ3ufSwh_0Lt8h-an3MCGvQOFbnpArIdEpqo09F-Cf8hqWjB-cXTvojLFJZLPdw6Pte2_OzkwvNU1e6DkuVQBtNcR0ayK_jx21iqYNnkMiBJfedqj9jjMkCakf-E"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">@atelier_v</span>
+</div>
+</div>
+</div>
+<!-- Card 4 (Bonus Peek) -->
+<div class="group relative w-36 aspect-[9/16] rounded-xl overflow-hidden shrink-0 bg-surface-container-low shadow-[0_4px_16px_rgba(0,0,0,0.5)] cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Architectural drone sweep of a minimalist brutalist villa illuminated by warm courtyard pool fires at dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk0_x688smDNJD0h3MAVJ02vOllAOiDqcEtCrXY9L0Vk02PQvUbDVuLDZAHGsGukKPztG7zaP40Qhy_qlXyf5qTg8zkNi9aALlYue_V0Jthg0tmX_11OAjd3sFx30Q35eZQJnLmWCdgVLXfL5STrdcek21Wzogd7lELoF_bMMvvv2wc_-1VvnqhpcqphkMHCjo4IfXXpE_GLzqqMaPwcL3axCJKrcdCa2hmFAy_wDTrFSPCkiCW9To"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          2.1M
+        </div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex flex-col">
+<p class="font-label-md text-label-md font-semibold text-on-surface line-clamp-2 leading-tight">
+            Brutalist Living in the Alps
+          </p>
+<div class="flex items-center gap-1.5 mt-2">
+<img class="w-4 h-4 rounded-full object-cover" data-alt="Micro avatar of luxury architecture curator." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpf3ZL8AD4Kudc0EpLs5fysrLOmy6EBlSrCv8ADBAuoGXosRKCEu9XTHYdppKogKnoNUSae2X_0WWIzh65AqHCgsCJXJrbSuQ579bH5E6huG7qVT0_BRk1fVWmeCbHhNDZQTqbD2IYCiFn6Weq3-yknE4gXCww-VC44OQhFzQXiwYACmlWSoiRdcoBshQ4_6W3x0npRtrWWeNIaSZvP0UVZFgs0-uZWZoiU7B1rhCOv15WrX16eAWW"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">@noir_arch</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feed Video Item 1 -->
+<article class="w-full px-margin-mobile mb-space-lg">
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-[0_6px_20px_rgba(0,0,0,0.45)]">
+<!-- Media Aspect Layer -->
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-highest cursor-pointer group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luxury electric hypercar in an anechoic chamber with precision microphones capturing aero acoustic flutter under dramatic theatrical golden rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8O6KqIBPRoyOxrulUll22WChBOdtCPUuWMocWIdJ3owzv8v2339CDVAq9f0iyoq8KSmy_B_1ZEwGSycqphrW2SEff_IK5pWCZOMMKSy75pEIxabPq0vC2p5p-0RuPO4hjkS6NrZ8kJSVUaUvFtd1wQ3i-ONQkQ5lW-34KHAuZhdKeNUNUqArwVGegLJUrnyvJTb6rED7MeaojjatxDqyUXKFKPVg4uECRqFXuc0lvnEwNJ4fj1C_P"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+          24:15
+        </div>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-primary font-label-sm text-label-sm">
+          Dolby Atmos
+        </div>
+</div>
+<!-- Metadata -->
+<div class="p-space-md flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 mt-0.5 p-[1px] bg-gradient-to-tr from-primary to-primary-container" data-alt="Minimalist emblem logo for Apex Dynamics automotive design house in polished gold and matte carbon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0WbIwXiVaFbKF85QlmOHiO50SJGFgxobdRH_WMNLwFdQtSvHOjq-ZBN_Of7fhuVfBK4ywzc5yPzhdIkJzWgMEfytfzGt9WyfPsHm-BWwueSiD62Yy3g2Y_PRoeAJJjcqiFkHynjzBdnxk7_MjnYYvrqfNQ_x900rhRwWO2Rn-KAv17HCj6nqwyUePrCVYWcI0hO3FsztAcRZVhaZ8felxOC_edZU4oa_1knBW8_7d5OF1VLxCC6Bm"/>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface line-clamp-2 leading-snug hover:text-primary transition-colors cursor-pointer">
+              Acoustic Perfection: Crafting the Sound of Electric Hypercars
+            </h3>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium truncate">Apex Dynamics</span>
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>420K views</span>
+<span>•</span>
+<span>5 hours ago</span>
+</div>
+</div>
+</div>
+<button aria-label="More options" class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Feed Video Item 2 -->
+<article class="w-full px-margin-mobile mb-space-lg">
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-[0_6px_20px_rgba(0,0,0,0.45)]">
+<!-- Media Aspect Layer -->
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-highest cursor-pointer group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Tokyo Shibuya crossroads at midnight seen from a rainy luxury penthouse window with glowing neon reflections in gold and amber tones captured in 8k cinematic depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCanhZHuRzmtyGQzBKz9I1nGYS578ZAcK8xcUKU013yIluJ_li2Im7wIAdCMtYgjRhPTyjpxBYSq-BBKyWC_HBOZtMVZ0YHNPUIzGSunnk6qFic1Q-7bzbHc7WNLxDjyQD7ON6d1K_Xs-_Mnex48zk5scelnB4tdUXs7OX6SBFpCzenRnBqJ1UddqqhyDvEPSgJ8YlfghNu3ILglG8U26HYP06AvHicIxVjvVzXYm9DPZTIp8vZgBxa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+          42:08
+        </div>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-primary font-label-sm text-label-sm">
+          8K Cinema Raw
+        </div>
+</div>
+<!-- Metadata -->
+<div class="p-space-md flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 mt-0.5 p-[1px] bg-gradient-to-tr from-primary to-primary-container" data-alt="Circular avatar of visual traveler Nocturne Odyssey with atmospheric midnight city bokeh behind him." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnRv9WlTAWIMk2VFso8M1j82isK6Wu2qPdUXi2Osqugp7i3oNDzD5L0Ifrzfo7sAmwd4vaP1hDcIM19KhgA6j3yj78DRH12V5Svoa7UCLBdFaPwVvScTnVGZj9p4LaxxOahTxhWl2tT21u2fxuBeNj6KY-4uLIWMvW3JYDhumU5ARCQrYrSTyrFvgwZ8LdrtXL-i0io8xtzGQ3YFM16iaV9Db0nEfTSmULr4n_AsP2XYAbfmT5OudT"/>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface line-clamp-2 leading-snug hover:text-primary transition-colors cursor-pointer">
+              The Architecture of Midnight: Tokyo After Dark 8K
+            </h3>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium truncate">Nocturne Odyssey</span>
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>890K views</span>
+<span>•</span>
+<span>1 day ago</span>
+</div>
+</div>
+</div>
+<button aria-label="More options" class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Feed Video Item 3 (Ambient Architectural Short-Doc) -->
+<article class="w-full px-margin-mobile mb-space-md">
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-[0_6px_20px_rgba(0,0,0,0.45)]">
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-highest cursor-pointer group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist concrete villa cantilevered over the Mediterranean coastline at twilight with subtle warm interior chandeliers shining through floor-to-ceiling glass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7tS6SPtD1QFLf_IAL3DKInvvJ9Ivhn4Pi_AmJL6yQQ8Stu5UUMwdTLdOusvzLz1CO8ZvUvRUY0oiJJIsPwD8UVP5azqiLSmgrjYaLREnauVw62GmCc4HaKPM_wC_IrtsM2kB7SuGkdtKKwoLuxw209zDfShpjVXF-8Wh6Bx7DA_hISNqYLgKzGHrI5SnRiQaVtauklwxA6senwTXn543L2sVztTDukg6WrWvz3vngOerVf2HmzDJi"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+          12:30
+        </div>
+</div>
+<div class="p-space-md flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 mt-0.5 p-[1px] bg-gradient-to-tr from-primary to-primary-container" data-alt="Avatar portrait of an architectural curator in monochrome silhouette with warm ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBemJ5s8HObbvmLwujtkhDc9_FDJrgE7SsdTDvqC1nP5M8nlFOQuGUKPZb347p9NxHswOiraTsEIvPAhy8MT4XLJWq-P-PrJ1A4JsYwxsbU1p_YBgvRdIVvUtEsP2QvfMW_32Hv5g5juL8sosGnlan4ONCMqCngXCzbY2KdEMwPrN8nRaIVnXupvbGT-G7gBWdiDUzdxzsGHDBhhcBKcxP5UQ9nczc1ogk-hO49qdP8aln1r36HMPEp"/>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface line-clamp-2 leading-snug hover:text-primary transition-colors cursor-pointer">
+              Living in the Void: Mediterranean Brutalism
+            </h3>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium truncate">Maison Forma</span>
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>310K views</span>
+<span>•</span>
+<span>3 days ago</span>
+</div>
+</div>
+</div>
+<button aria-label="More options" class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Delightful End-of-Feed Signature Stamp -->
+<div class="w-full flex flex-col items-center justify-center py-space-xl px-margin-mobile text-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-space-sm text-primary shadow-[0_0_24px_rgba(242,202,80,0.15)]">
+<span class="material-symbols-outlined text-[26px]">all_inclusive</span>
+</div>
+<p class="font-headline-md text-headline-md font-semibold text-on-surface">You're completely caught up</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[260px]">
+      Experience new masterworks handpicked daily by the Aura editorial curatorium.
+    </p>
+</div>
+</div>
+<script>
+  // Dynamic Category Chip Active State Management
+  document.querySelectorAll('.category-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.category-chip').forEach(c => {
+        c.className = 'category-chip px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all hover:text-on-surface';
+      });
+      chip.className = 'category-chip px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shrink-0 shadow-[0_0_12px_rgba(242,202,80,0.35)] active:scale-95 transition-all';
+    });
+  });
+
+  // Micro-interaction for Like Button
+  document.querySelectorAll('.btn-like').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const icon = this.querySelector('.material-symbols-outlined');
+      const counter = this.querySelector('span:last-child');
+      const isLiked = icon.style.fontVariationSettings.includes("'FILL' 1");
+      
+      if (!isLiked) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        this.classList.remove('text-on-surface-variant');
+        this.classList.add('text-primary');
+        counter.textContent = '49K';
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        this.classList.add('text-on-surface-variant');
+        this.classList.remove('text-primary');
+        counter.textContent = '48K';
+      }
+    });
+  });
+
+  // Micro-interaction for Bookmark/Save Button
+  document.querySelectorAll('.btn-save').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const icon = this.querySelector('.material-symbols-outlined');
+      if (icon.textContent === 'bookmark_border') {
+        icon.textContent = 'bookmark';
+        icon.style.fontVariationSettings = "'FILL' 1";
+        this.classList.remove('text-on-surface-variant');
+        this.classList.add('text-primary');
+      } else {
+        icon.textContent = 'bookmark_border';
+        icon.style.fontVariationSettings = "'FILL' 0";
+        this.classList.add('text-on-surface-variant');
+        this.classList.remove('text-primary');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none" data-active-classes="text-primary font-semibold drop-shadow-[0_0_8px_rgba(242,202,80,0.4)]"><div class="px-margin-mobile pb-space-sm"><div class="pointer-events-auto h-16 rounded-full bg-surface-container-low/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.7),0_0_20px_rgba(212,175,55,0.08)] flex items-center justify-around px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-primary font-semibold drop-shadow-[0_0_8px_rgba(242,202,80,0.4)]" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="shorts-pulse" href="#"><span class="material-symbols-outlined text-[22px]">bolt</span><span class="font-label-sm text-label-sm mt-0.5">Pulse</span></a><div class="flex items-center justify-center w-12 h-12"><a class="w-11 h-11 rounded-full bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-on-primary shadow-[0_0_16px_rgba(242,202,80,0.45)] hover:scale-105 active:scale-95 transition-transform" data-path="upload-studio" href="#"><span class="material-symbols-outlined text-[26px] font-bold">add</span></a></div><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="subscriptions-hub" href="#"><span class="material-symbols-outlined text-[22px]">subscriptions</span><span class="font-label-sm text-label-sm mt-0.5">Subs</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="library-vault" href="#"><span class="material-symbols-outlined text-[22px]">video_library</span><span class="font-label-sm text-label-sm mt-0.5">Library</span></a></div></div></nav></body></html>
